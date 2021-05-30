@@ -8,18 +8,24 @@
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-  <div id="carousel">
-      <button id="carousel-button-left" class="carousel-button">
-        <img src="imgs/left-arrow.png">
-      </button>
-        <div id="carousel-container">
-          <img id="img" class="fade" src="imgs/hiking.jpg" alt="">
-        </div>
-      <button id="carousel-button-right" class="carousel-button">
-        <img src="imgs/next.png">
-      </button>
+  <div id="carousel-body-div">
+
+    <button id="carousel-button-left" class="carousel-buttons">
+      <img src="imgs/left-arrow.png">
+    </button>
+<!-- The <img> tag here is altered through JS -->
+      <div id="carousel-container-div">
+        <img id="img" src="imgs/hiking.jpg" alt="">
+      </div>
+
+    <button id="carousel-button-right" class="carousel-buttons">
+      <img src="imgs/next.png">
+    </button>
+
   </div>
-    <div id="carousel-nav"></div>
+<!-- JS generates the dots within the container -->
+  <div id="carousel-dot-container"></div>
+
   <script src="app.js"></script>
 </body>
 </html>

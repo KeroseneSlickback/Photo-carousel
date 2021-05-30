@@ -1,20 +1,22 @@
-#carousel {
+#carousel-body-div {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 }
 
-#carousel-container {
+#carousel-container-div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
+/* Transition in CSS for when JS changes the classes. Timing can be altered */
 #img {
 	transition: 0.3s ease-in-out;
 }
 
+/* These fade classes are swapped when images change */
 .fade-out {
 	opacity: 0;
 }
@@ -23,7 +25,7 @@
 	opacity: 1;
 }
 
-.carousel-button {
+.carousel-buttons {
 	padding: 0;
 	border: none;
 	background-color: transparent;
@@ -31,7 +33,7 @@
 	transition: 0.15s ease-in-out;
 }
 
-.carousel-button:hover {
+.carousel-buttons:hover {
 	opacity: 0.5;
 }
 
@@ -39,7 +41,7 @@
 	opacity: 0.5;
 }
 
-#carousel-nav {
+#carousel-dot-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
